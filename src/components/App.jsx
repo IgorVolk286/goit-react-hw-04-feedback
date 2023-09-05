@@ -47,7 +47,7 @@ export const App = () => {
             feedBackPercentage={countPositiveFeedbackPercentage}
           />
         ) : (
-          toast.warn('MAKE YOUR CHOOSE')
+          toast.warn('MAKE YOUR CHOOSE FEED')
         )}
       </SectionTitle>
       <ToastContainer position="top-center" autoClose={1000} />

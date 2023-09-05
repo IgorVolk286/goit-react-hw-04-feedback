@@ -4,6 +4,7 @@ import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Statistic } from 'components/Statistic/Statistic';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { GlobalStyle } from './GlobalStyles';
 
 export const App = () => {
   const [good, setGood] = useState(0);
@@ -51,6 +52,7 @@ export const App = () => {
         )}
       </SectionTitle>
       <ToastContainer position="top-center" autoClose={1000} />
+      <GlobalStyle />
     </div>
   );
 };

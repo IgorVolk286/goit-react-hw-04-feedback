@@ -20,9 +20,10 @@ export const App = () => {
         break;
       case 'bad':
         setBad(prev => prev + 1);
+
+      default:
+        console.log('Invalid subscription type');
     }
-    default:
-      return
   };
 
   const countTotalFeedback = () => {

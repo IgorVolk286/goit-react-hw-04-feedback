@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { WrapButtons, Button } from './FeedbackOptions.styled';
 import { nanoid } from 'nanoid';
+
 export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <WrapButtons>

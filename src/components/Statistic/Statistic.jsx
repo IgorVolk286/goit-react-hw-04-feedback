@@ -2,13 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Item, TitleList } from './Statistic.styled';
 
-export const Statistic = ({
-  good,
-  bad,
-  neutral,
-  totalFeedBack,
-  feedBackPercentage,
-}) => {
+export const Statistic = ({ datas, totalFeedBack, feedBackPercentage }) => {
+  const [good, neutral, bad] = datas;
   return (
     <div>
       <TitleList>STATISTICS</TitleList>
@@ -29,9 +24,7 @@ export const Statistic = ({
   );
 };
 Statistic.propTypes = {
-  good: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
+  datas: PropTypes.array.isRequired,
   totalFeedBack: PropTypes.func.isRequired,
-  feedbackPercentage: PropTypes.func.isRequired,
+  feedbackPercentage: PropTypes.func,
 };

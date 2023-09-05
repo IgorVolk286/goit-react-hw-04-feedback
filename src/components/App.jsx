@@ -50,7 +50,7 @@ export const App = () => {
           toast.warn('MAKE YOUR CHOOSE')
         )}
       </SectionTitle>
-      <ToastContainer position="top-center" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={1000} />
     </div>
   );
 };

@@ -20,7 +20,7 @@ export const App = () => {
         break;
       case 'bad':
         setBad(prev => prev + 1);
-
+        break;
       default:
         console.log('Invalid subscription type');
     }

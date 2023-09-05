@@ -21,6 +21,8 @@ export const App = () => {
       case 'bad':
         setBad(prev => prev + 1);
     }
+    default:
+      return
   };
 
   const countTotalFeedback = () => {
